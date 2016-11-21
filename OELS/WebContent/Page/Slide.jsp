@@ -60,6 +60,12 @@
 						<h3 class="colortext uppercase">帮你展现更美的自已</h3>
 						<span>彩妆刷让你打造美丽妆容更加得心应手。彩妆刷已从专业造型师手中， </span>
 					</div></li>
+					<li><a href="http://sc.chinaz.com/"><img
+						src="<%=basePath%>Images/Slide/index4.jpg" alt="" /></a>
+					<div class="label_text">
+						<h3 class="colortext uppercase">帮你展现更美的自已</h3>
+						<span>彩妆刷让你打造美丽妆容更加得心应手。彩妆刷已从专业造型师手中， </span>
+					</div></li>
 			</ul>
 		</div>
 	</div>

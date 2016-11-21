@@ -14,15 +14,19 @@
 	href="<%=basePath%>/CSS/Custom/jquery.hiSlider.min.css">
 <link rel="stylesheet" type="text/css"
 	href="<%=basePath%>/CSS/Third_Party/bootstrap.min.css">
-<script src="<%=basePath%>/JQuery/Third_Party/jquery-2.1.4.min.js"></script>
-<script src="<%=basePath%>/JQuery/Third_Party/bootstrap.min.js"></script>
-<script src="<%=basePath%>/JQuery/Custom/custom.js"></script>
-<script src="<%=basePath%>/JQuery/Custom/custom.js"></script>
-<script src="<%=basePath%>/JQuery/Custom/jquery.hiSlider.min.js"></script>
+<script type="text/javascript"
+	src="<%=basePath%>/JQuery/Third_Party/jquery-2.1.4.min.js"></script>
+<script type="text/javascript"
+	src="<%=basePath%>/JQuery/Third_Party/bootstrap.min.js"></script>
+<script type="text/javascript"
+	src="<%=basePath%>/JQuery/Custom/custom.js"></script>
+<script type="text/javascript"
+	src="<%=basePath%>/JQuery/Custom/jquery.hiSlider.min.js"></script>
 
 </head>
 <body>
 	<jsp:include page="/Page/Navigation.jsp" flush="true" />
-	<jsp:include page="/Page/Slide.jsp" flush="true" />
+	<jsp:include page="/Page/Slide2.jsp" flush="true" />
+	
 </body>
 </html>

@@ -51,7 +51,7 @@ body{margin:0;}
 }
 .nav li {
 	float: left;
-	padding: 0 42px;
+	padding: 0 40px;
 	background: url(../../Images/Navigation/split.png) no-repeat right center;
 	position: relative;
 	z-index: 2;
