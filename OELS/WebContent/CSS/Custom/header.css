@@ -1,11 +1,69 @@
-.header{width:100%;height:50px;marin:0;}
-.left{margin-left:20%;}
-.left ul li a{color:white;}
-.right{padding-left:30px;margin-top:7px;
-font: 14px "Futura Medium", "Myriad Pro", "Gill Sans", Helvetica, Verdana, Arial, sans-serif;
+.header {
+	width: 100%;
+	height: 50px;
+	marin: 0;
 }
-.right ul li{list-style-type:none;display:inline;}
-.right ul li a{color:red;font-family: "Arial","Microsoft YaHei","黑体","宋体",sans-serif;}
-.right ul li a:hover{color:blue;text-decoration:undreline;}
-.inline{display:inline;float:left;}
-.size{width:80%;margin-top:15px;margin-left:25%;margin-bottom:30px;}
+
+.left ul li a {
+	color: white;
+}
+
+@media screen and (max-width:1450px) {
+	.left {
+		margin-left: 10%;
+	}
+	.right {
+		padding-left: 15px;
+		margin-top: 7px;
+		font: 14px "Futura Medium", "Myriad Pro", "Gill Sans", Helvetica,
+			Verdana, Arial, sans-serif;
+	}
+	.right ul li {
+		list-style-type: none;
+		display: inline;
+	}
+	.right ul li a {
+		color: red;
+		font-family: "Arial", "Microsoft YaHei", "黑体", "宋体", sans-serif;
+	}
+	.right ul li a:hover {
+		color: blue;
+		text-decoration: undreline;
+	}
+}
+
+@media screen and (max-width:1450px) {
+	.left {
+		margin-left: 20%;
+	}
+	.right {
+		padding-left: 40px;
+		margin-top: 7px;
+		font: 14px "Futura Medium", "Myriad Pro", "Gill Sans", Helvetica,
+			Verdana, Arial, sans-serif;
+	}
+	.right ul li {
+		list-style-type: none;
+		display: inline;
+	}
+	.right ul li a {
+		color: red;
+		font-family: "Arial", "Microsoft YaHei", "黑体", "宋体", sans-serif;
+	}
+	.right ul li a:hover {
+		color: blue;
+		text-decoration: undreline;
+	}
+}
+
+.inline {
+	display: inline;
+	float: left;
+}
+
+.size {
+	width: 80%;
+	margin-top: 15px;
+	margin-left: 25%;
+	margin-bottom: 30px;
+}

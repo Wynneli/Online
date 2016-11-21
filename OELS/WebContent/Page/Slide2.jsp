@@ -8,8 +8,8 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<link rel="stylesheet" type="text/css"
-	href="<%=basePath%>/CSS/Custom/slide/style2.css">
+<link rel="stylesheet" type="text/css" id="css"
+	href="<%=basePath%>/CSS/Custom/slide/slide2_style.css">
 <script src="<%=basePath%>/JQuery/Third_Party/jquery-2.1.4.min.js"></script>
 <script src="<%=basePath%>/JQuery/Custom/slide/jquery.indexSlidePattern.js"></script>
 <script language="javascript">
@@ -24,35 +24,36 @@
 		$("#demo").IMGDEMO(opt);
 	});
 </script>
+
+
+
 </head>
 <body>
 
 	<ul id="demo">
-		<li class="active"><a href="http://sc.chinaz.com/jiaoben/"><img
+		<li class="active"><a href=""><img
 				src="<%=basePath%>Images/Slide/1.jpg" /></a>
 			<div>
-				<a href="http://sc.chinaz.com/jiaoben/">标题1</a>
+				<a href="">标题1</a>
 			</div></li>
-		<li><a href="http://sc.chinaz.com/jiaoben/"><img
-				src="<%=basePath%>Images/Slide/2.jpg" /></a>
+		<li><a href=""><img src="<%=basePath%>Images/Slide/2.jpg" /></a>
 			<div>
-				<a href="http://sc.chinaz.com/jiaoben/">标题2</a>
+				<a href="">标题2</a>
 			</div></li>
-		<li><a href="http://sc.chinaz.com/jiaoben/"><img
-				src="<%=basePath%>Images/Slide/3.jpg" /></a>
+		<li><a href=""><img src="<%=basePath%>Images/Slide/3.jpg" /></a>
 			<div>
-				<a href="http://sc.chinaz.com/jiaoben/">标题3</a>
+				<a href="">标题3</a>
 			</div></li>
-		<li><a href="http://sc.chinaz.com/jiaoben/"><img
-				src="<%=basePath%>Images/Slide/4.jpg" /></a>
+		<li><a href=""><img src="<%=basePath%>Images/Slide/4.jpg" /></a>
 			<div>
-				<a href="http://sc.chinaz.com/jiaoben/">标题4</a>
+				<a href="">标题4</a>
 			</div></li>
-		<li><a href="http://sc.chinaz.com/jiaoben/"><img
+		<li><a href=""><img
 				src="<%=basePath%>Images/Slide/index4.jpg" /></a>
 			<div>
-				<a href="http://sc.chinaz.com/jiaoben/">标题5</a>
+				<a href="">标题5</a>
 			</div></li>
 	</ul>
+
 </body>
 </html>
