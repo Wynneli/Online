@@ -64,26 +64,27 @@ body {
 	font-size: 15px;
 }
 
-.nav li {
-	float: left;
-	padding: 0 45px;
-	background: url(../../Images/Navigation/split.png) no-repeat right
-		center;
-	position: relative;
-	z-index: 2;
-}
 
 @media screen and (max-width:1450px) {
 	.nav li {
 		float: left;
-		padding: 0 35px;
+		padding: 0 37px;
 		background: url(../../Images/Navigation/split.png) no-repeat right
 			center;
 		position: relative;
 		z-index: 2;
 	}
 }
-
+@media screen and (min-width:1600px) {
+	.nav li {
+		float: left;
+		padding: 0 45px;
+		background: url(../../Images/Navigation/split.png) no-repeat right
+			center;
+		position: relative;
+		z-index: 2;
+	}
+}
 .nav li.last {
 	background: none;
 }

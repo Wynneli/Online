@@ -79,7 +79,7 @@
 		</div>
 		<div class="right inline">
 			<ul>
-				<li><a href="">免费注册</a>&nbsp;&nbsp;</li>|
+				<li><a href="<%=basePath%>Page/Login/Login.jsp">免费注册</a>&nbsp;&nbsp;</li>|
 				<li><a href="">登录</a></li>
 			</ul>
 		</div>

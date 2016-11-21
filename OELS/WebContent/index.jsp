@@ -25,8 +25,8 @@
 
 </head>
 <body>
-	<jsp:include page="/Page/Navigation.jsp" flush="true" />
-	<jsp:include page="/Page/Slide2.jsp" flush="true" />
+	<jsp:include page="/Page/Index/Navigation.jsp" flush="true" />
+	<jsp:include page="/Page/Index/Slide2.jsp" flush="true" />
 	
 </body>
 </html>
