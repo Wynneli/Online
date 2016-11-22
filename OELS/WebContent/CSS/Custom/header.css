@@ -2,10 +2,8 @@
 	width: 100%;
 	height: 50px;
 	marin: 0;
-}
-
-.left ul li a {
-	color: white;
+	position: relative;
+	min-width: 1360px;
 }
 
 @media screen and (max-width:1450px) {
@@ -13,6 +11,7 @@
 		margin-left: 10%;
 	}
 	.right {
+		min-width: 70px;
 		padding-left: 15px;
 		margin-top: 7px;
 		font: 14px "Futura Medium", "Myriad Pro", "Gill Sans", Helvetica,
@@ -24,7 +23,7 @@
 	}
 	.right ul li a {
 		color: red;
-		font-family: "Arial", "Microsoft YaHei", "ºÚÌå", "ËÎÌå", sans-serif;
+		font-family: "Arial", "Microsoft YaHei", "ï¿½ï¿½ï¿½ï¿½", "ï¿½ï¿½ï¿½ï¿½", sans-serif;
 	}
 	.right ul li a:hover {
 		color: blue;
@@ -34,9 +33,10 @@
 
 @media screen and (min-width:1600px) {
 	.left {
-		margin-left: 20%;
+		margin-left: 14%;
 	}
 	.right {
+		min-width: 100px;
 		padding-left: 40px;
 		margin-top: 7px;
 		font: 14px "Futura Medium", "Myriad Pro", "Gill Sans", Helvetica,
@@ -48,7 +48,7 @@
 	}
 	.right ul li a {
 		color: red;
-		font-family: "Arial", "Microsoft YaHei", "ºÚÌå", "ËÎÌå", sans-serif;
+		font-family: "Arial", "Microsoft YaHei", "ï¿½ï¿½ï¿½ï¿½", "ï¿½ï¿½ï¿½ï¿½", sans-serif;
 	}
 	.right ul li a:hover {
 		color: blue;
