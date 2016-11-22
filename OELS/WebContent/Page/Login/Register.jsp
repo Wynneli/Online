@@ -9,80 +9,96 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<link rel="stylesheet" type="text/css" id="css"
+<link rel="stylesheet" type="text/css"
 	href="<%=basePath%>CSS/Custom/Login/register.css">
 <script src="<%=basePath%>JQuery/Third_Party/jquery-2.1.4.min.js"></script>
-<script src="<%=basePath%>JQuery/Custom/Login/kit.js"></script>
-<script src="<%=basePath%>JQuery/Custom/Login/ieFix.js"></script>
-<script type="text/javascript">
-	var _gaq = _gaq || [];
-	_gaq.push([ '_setAccount', 'UA-30210234-1' ]);
-	_gaq.push([ '_trackPageview' ]);
-	(function() {
-		var ga = document.createElement('script');
-		ga.type = 'text/javascript';
-		ga.async = true;
-		ga.src = ('https:' == document.location.protocol ? 'https://ssl'
-				: 'http://www')
-				+ '.google-analytics.com/ga.js';
-		var s = document.getElementsByTagName('script')[0];
-		s.parentNode.insertBefore(ga, s);
-	})();
-</script>
-<script src="<%=basePath%>JQuery/Custom/Login/dom.js"></script>
-<script src="<%=basePath%>JQuery/Custom/Login/form.js"></script>
-<script src="<%=basePath%>JQuery/Custom/Login/validator.js"></script>
-<script src="<%=basePath%>JQuery/Custom/Login/autowired_validator.js"></script>
-
+<script src="<%=basePath%>JQuery/Custom/Login/register.js"></script>
 <title>Insert title here</title>
-
-<style>
-table td {
-	font-size: 14px;
-}
-
-label {
-	cursor: pointer;
-	margin-right: 1em;
-}
-</style>
 </head>
 <body>
-	<div id="regist-main">
-			<form id="registForm" action="/Account/Register" method="post" onsubmit="alert('验证通过，可以提交！');return false;">
-				<ol>
-					<li>
-						<label for="UserName">用户名：
-						<span class="kitjs-validator" for="@UserName" rules="[{notNull:true, message:'用户名不能为空'}]"></span>
-						</label>
-						<span class="field-validation-valid" data-valmsg-for="UserName" data-valmsg-replace="true"></span>
-						<input id="UserName" name="UserName" type="text" value="">
-					</li>
-					<li>
-						<label for="Email">电子邮件：
-						<span class="kitjs-validator" for="@Email" rules="[{notNull:true, message:'电子邮件不能为空'},{isEmail:true,message:'电子邮件格式不正确'}]"></span>
-						</label>
-						<span class="field-validation-valid" data-valmsg-for="Email" data-valmsg-replace="true"></span>
-						<input id="Email" name="Email" type="text" value="">
-					</li>
-					<li>
-						<label for="Password">密码：
-						<span class="kitjs-validator" for="@Password" rules="[{notNull:true, message:'密码不能为空'},{minLength:'6',message:'密码长度最少为6位'}]"></span>
-						</label>
-						<span class="field-validation-valid" data-valmsg-for="Password" data-valmsg-replace="true"></span>
-						<input id="Password" name="Password" type="password">
-					</li>
-					<li>
-						<label for="ConfirmPassword">重新输入密码：
-						<span class="kitjs-validator" for="@ConfirmPassword" rules="[{notNull:true, message:'重新输入密码不能为空'},{equalWith:'@Password',message:'两次输入密码必须一致'},{minLength:'6',message:'密码长度最少为6位'}]"></span>
-						</label>
-						<span class="field-validation-valid" data-valmsg-for="ConfirmPassword" data-valmsg-replace="true"></span>
-						<input id="ConfirmPassword" name="ConfirmPassword" type="password">
-					</li>
-				</ol>
-				<div class="registError"></div>
-				<input type="submit" value="注册" class="btn-submit">
-			</form>
+	<div class="content">
+		<form id="#mainForm1" class="mainForm mainForm1">
+			<div class="number">
+				<a href="##" class="linkABlue">手机号码注册</a> <span></span> <a href="##"
+					class="linkAGray number1">账户名注册</a>
+			</div>
+			<div class="normalInput">
+				<input type="text" class="phone" maxlength="11" placeholder="手机号码">
+			</div>
+			<span class="error error1"></span>
+			<div class="normalInput">
+				<input type="text" class="kapkey" maxlength="6" placeholder="验证码">
+				<span class="formLine"></span> <a href="##" id="getKey"
+					class="linkABlue">获取验证码</a>
+			</div>
+			<span class="error error2"></span>
+			<div class="normalInput">
+				<input type="text" class="password" maxlength="16"
+					autocomplete="off" placeholder="密码"> <input type="password"
+					class="password1" maxlength="16" autocomplete="off"
+					placeholder="密码"> <a id="pwdBtn" href="##"
+					class="pwdBtnShow" isshow="false"> <i class="i_icon"></i>
+				</a>
+			</div>
+			<span class="error error3"></span>
+			<div class="rememberField">
+				<span class="checkboxPic check_chk" tabindex="-1" isshow="false">
+					<i class="i_icon"></i>
+				</span> <label class="pointer">我已阅读并接受</label> <a href="#" target="_blank"
+					class="linkABlue">《Flyme服务协议条款》</a>
+			</div>
+			<span class="otherError">请确认已阅读并同意Flyme服务协议条款</span> <a href="##"
+				class="fullBtnBlue">注册</a>
+		</form>
+		<form id="#mainForm2" class="mainForm mainForm2">
+			<div class="number">
+				<a href="##" class="linkABlue2 number2">手机号码注册</a> <span></span> <a
+					href="##" class="linkAGray2">账户名注册</a>
+			</div>
+			<div class="normalInput">
+				<input type="text" class="username" maxlength="32" placeholder="账户名"
+					autocomplete="off"> <!-- <span class="grayTip">@flyme.cn</span> -->
+			</div>
+			<span class="error error1"></span>
+			<div class="normalInput">
+				<input type="text" class="passwordN" maxlength="16"
+					autocomplete="off" placeholder="密码"> <input type="password"
+					class="password1N" maxlength="16" autocomplete="off"
+					placeholder="密码"> <a id="pwdBtnN" href="##"
+					class="pwdBtnShowN" isshow="false"> <i class="i_icon"></i>
+				</a>
+			</div>
+			<span class="error error3"></span>
+			<div class="normalInput">
+				<input type="text" class="email" maxlength="32" placeholder="安全邮箱"
+					autocomplete="off">
+			</div>
+			<span class="error error2"></span>
+			<div class="rememberField">
+				<span class="checkboxPic check_chk" tabindex="-1" isshow="false">
+					<i class="i_icon"></i>
+				</span> <label class="pointer">我已阅读并接受</label> <a
+					href="https://member.meizu.com/ServiceAgreement.jsp"
+					target="_blank" class="linkABlue">《Flyme服务协议条款》</a>
+			</div>
+			<span class="otherError">请确认已阅读并同意Flyme服务协议条款</span> <a href="##"
+				class="fullBtnBlue">注册</a>
+		</form>
+	</div>
+	<ul class="bRadius2 mail">
+		<li data-mail="@qq.com" class="item item1">@qq.com</li>
+		<li data-mail="@sina.com" class="item item2">@sina.com</li>
+		<li data-mail="@126.com" class="item item3">@126.com</li>
+		<li data-mail="@163.com" class="item item4">@163.com</li>
+		<li data-mail="@gmail.com" class="item item5">@gmail.com</li>
+	</ul>
+	<div id="mz_Float">
+		<div class="mz_FloatBox">
+			<div class="mz3AngleL">
+				<i class="i_icon"></i>
+			</div>
+			<div class="mzFloatTip bRadius2">长度为8-16个字符，区分大小写，至少包含两种类型</div>
 		</div>
+	</div>
 </body>
 </html>
