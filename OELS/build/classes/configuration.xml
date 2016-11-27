@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN" "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<!-- 利用XMl构造SqlSessionFactory -->
+<!-- MyBatis 系统的核心设置，包含获取数据库连接实例的数据源 （DataSource）和决定事务范围和控制方式的事务管理器（TransactionManager） -->
+<configuration>
+	<environments default="development">
+		<environment id="development">
+			<transactionManager type="JDBC" />
+			<dataSource type="POOLED">
+				<property name="driver" value="com.mysql.jdbc.Driver" />
+				<property name="url" value="jdbc:mysql://localhost:3306/oels?characterEncoding=utf-8" />
+				<property name="username" value="root" />
+				<property name="password" value="1234"/>
+			</dataSource>
+		</environment>
+	</environments>
+	<mappers>
+		<mapper resource="com/wynne/Mapper/UserMapper.xml" />
+	</mappers>
+</configuration>

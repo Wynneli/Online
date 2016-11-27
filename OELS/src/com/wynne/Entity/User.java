@@ -1,10 +1,10 @@
-package com.wynne.Entiry;
+package com.wynne.Entity;
 
 public class User {
 	private String UserID;
 	private String Mobile;
 	private String Email;
-	private String Password;
+	private String Passwords;
 	public String getUserID() {
 		return UserID;
 	}
@@ -23,11 +23,16 @@ public class User {
 	public void setEmail(String email) {
 		Email = email;
 	}
-	public String getPassword() {
-		return Password;
+	public String getPasswords() {
+		return Passwords;
 	}
-	public void setPassword(String password) {
-		Password = password;
+	public void setPasswords(String passwords) {
+		Passwords = passwords;
 	}
+	@Override
+	public String toString() {
+		return "User [UserID=" + UserID + ", Mobile=" + Mobile + ", Email=" + Email + ", Passwords=" + Passwords + "]";
+	}
+	
 
 }
